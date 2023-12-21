@@ -16,7 +16,7 @@
     </head>
     <body class="antialiased">
     <div class="container mt-5">
-    <h1>Welcome to our website!</h1>
+    <h1>Welcome to our Website!</h1>
 </div>
 
     </body>
