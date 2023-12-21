@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\GitController;
+use App\Http\Controllers\FormController;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,3 +22,8 @@ Route::get('/', function () {
 Route::get('/g', function () {
     return view('git');
 });
+
+
+
+Route::get('/form', [FormController::class, 'showForm'])->name('show.form');
+Route::post('/form', [FormController::class, 'processForm'])->name('process.form');
